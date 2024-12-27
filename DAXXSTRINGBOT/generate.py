@@ -1,7 +1,7 @@
 
 from pyrogram.types import Message
 from telethon import TelegramClient
-from pyrogram import Client, filters
+from pyrogram import filters
 from pyrogram import Client as Client1
 from asyncio.exceptions import TimeoutError
 from telethon.sessions import StringSession
@@ -33,7 +33,7 @@ from telethon.errors import (
 
 import config
 
-
+from shivu import shivuu as Client
 
 ask_ques = "**☞︎︎︎ ᴄʜᴏᴏsᴇ ᴏɴᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ 𖤍 ✔️ **"
 buttons_ques = [

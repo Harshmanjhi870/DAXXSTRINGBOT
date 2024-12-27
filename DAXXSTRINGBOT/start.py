@@ -7,7 +7,7 @@ from shivu import OWNER_ID, shivuu as Client
 def filter(cmd: str):
     return filters.private & filters.incoming & filters.command(cmd)
 
-@Client.on_message(filter("start"))
+@Client.on_message(filter("string"))
 async def start(bot: Client, msg: Message):
     me2 = (await bot.get_me()).mention
     await bot.send_message(
